@@ -31,6 +31,8 @@ module.exports = {
                 type: 'asset/resource'
             },
         ],
+    }, 
+    optimization: {
+        runtimeChunk: 'single',
     },
-    devtool: 'inline-source-map', 
 }
