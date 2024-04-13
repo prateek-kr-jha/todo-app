@@ -1,4 +1,4 @@
-import { Todo, Project } from "./todo.js";
+import { Task, Project } from "./task.js";
 // import {  } from "./todo.js";
 
 let new_todo = new Todo("Cook", "chicken curry", "04-05-2024", 1);
