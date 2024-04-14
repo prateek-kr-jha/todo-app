@@ -1,0 +1,36 @@
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: bisque;
+    opacity: 0.4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+}
+
+.container div {
+    border: 2px solid black; 
+}
+.header {
+    background-color: azure;
+    grid-row: 1;
+    grid-column: 1/6;
+}
+
+.nav {
+    background-color: aqua;
+    grid-column: 1/2;
+    grid-row: 2/9;
+}
+
+.main {
+    background-color: beige;
+    grid-column: 2/6;
+    grid-row: 2/9;
+}
+
+/* .footer{
+    background-color: rgb(240, 254, 255);
+    grid-row: 8;
+    grid-column: 2/6;
+} */
