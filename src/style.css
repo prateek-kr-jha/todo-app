@@ -2,7 +2,7 @@
     height: 100vh;
     width: 100vw;
     background-color: bisque;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr);
@@ -18,9 +18,11 @@
 }
 
 .nav {
-    background-color: aqua;
+    background-color: #1c1f20;
     grid-column: 1/2;
     grid-row: 2/9;
+    color: rgb(232, 230, 227);
+    font-size: xx-large;
 }
 
 .main {
