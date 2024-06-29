@@ -1,35 +1,40 @@
 class Task {
-    constructor(title, description, dueDate, priority) {
+    constructor(title, description="", priority=4, dueDate="", project="inbox") {
         this.title = title;
         this.description = description;
-        this.dueDate = dueDate;
         this.priority = priority;
-        this.completed = false;
+        this.dueDate = dueDate;
+        this.project = project;
+        this.subTasks = [];
     }
 
-    edit(title, description, dueDate, priority) {
-        if(title) {
-            this.title = title;
-        }
-
-        if(description) {
-            this.description = description;
-        }
-
-        if(dueDate) {
-            this.dueDate = dueDate;
-        }
-
-        if(priority) {
-            this.priority = priority;
-        }
+    changeTitle(newTitle) {
+        this.title = newTitle;
     }
 
-    toggleCompletionStatus(){
-        this.completed = !this.completed;
+    changeDescription(newDescription) {
+        this.description = newDescription;
     }
 
+    changePriority(newPriority) {
+        this.priority = newPriority;
+    }
 
+    changeDueDate(newDueDate) {
+        this.dueDate = newDueDate;
+    }
+
+    changeProject(newProject) {
+        this.project = newProject;
+    }
+
+    addSubtask(subTask) {
+        this.subTasks.push(subTask);
+    }
+
+    removeSubtask(indexOfSubTask) {
+        this.subTasks.splice(indexOfSubTask, 1);
+    } 
 }
 
 
