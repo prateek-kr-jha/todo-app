@@ -37,7 +37,41 @@ class Task {
     } 
 }
 
+class Project {
+    constructor(projectTitle, projectDescription) {
+        this.projectTitle = projectTitle;
+        this.projectDescription = projectDescription;
+        this.tasks = [];
+    }
+    
+    addTask(newTask) {
+        this.tasks.push(newTask);
+    }
+
+    deleteTask(taskIdx) {
+        if(!this.taskArray[taskIdx]) {
+            throw new Error("No such task");
+        }
+        this.tasks.splice(taskIdx, 1);
+    }
+
+    showTasks() {
+        return this.tasks;
+    }
+
+    changeProject(taskIdx, newProject) {
+        if(!this.tasks[taskIdx]) {
+            throw new Error("No such task");
+        }
+
+        let taskToMove = this.tasks[taskIdx];
+        this.tasks.splice(taskIdx, 1);
+        newProject.tasks.addTask(taskToMove);
+    }
+
+}
 
 export {
-    Task
+    Task, 
+    Project
 }
