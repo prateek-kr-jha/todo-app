@@ -33,7 +33,18 @@ class Task {
         this.subTasks.push(subTask);
     }
 
+    viewSubtaskContent(subTaskIdx) {
+        if(!this.subTasks[subTaskIdx]) {
+            throw new Error("No such subtask.");
+        }
+
+        return this.subTasks[subTaskIdx];
+    }
+
     removeSubtask(indexOfSubTask) {
+        if(!this.subTasks[subTaskIdx]) {
+            throw new Error("No such subtask.");
+        }
         this.subTasks.splice(indexOfSubTask, 1);
     }
     
@@ -41,6 +52,20 @@ class Task {
         this.completed = !this.completed;
     }
 }
+
+class SubTask extends Task {
+    constructor(title, description="", priority=4, dueDate="", project="", parentTask) {
+        if(!parentTask) {
+            throw new Error("A subtask can't exist without a parent task.");
+        }
+
+        super(title, description="", priority=4, dueDate="", project="");
+        this.parentTask = parentTask;
+    }
+}
+
+let newSubtask = new SubTask("new sub task", "test for subtask", "", "", "title", "title");
+console.log(newSubtask);
 
 class Project {
     constructor(title, description) {
@@ -62,7 +87,7 @@ class Project {
     }
 
     deleteTask(taskIdx) {
-        if(!this.taskArray[taskIdx]) {
+        if(!this.tasks[taskIdx]) {
             throw new Error("No such task");
         }
         this.tasks.splice(taskIdx, 1);
@@ -70,6 +95,13 @@ class Project {
 
     showTasks() {
         return this.tasks;
+    }
+
+    showTaskContent(taskIdx) {
+        if(!this.tasks[taskIdx]) {
+            throw new Error("No such task");
+        }
+        return tasks[taskIdx];
     }
 
     changeProjectOfTask(taskIdx, newProject) {

@@ -25,6 +25,17 @@ class Todo {
 
         this.projects[newProject.projectTitle] = newProject;
     }
+
+    viewProjects() {
+        return this.projects;
+    }
+
+    viewProjectContent(projectTitle) {
+        if(this.projects.hasOwnProperty(projectTitle)) {
+            throw new Error("No such Project.");
+        }
+        return this.projects[projectTitle];
+    }
 }
 
 let todo_1 = new Todo();
