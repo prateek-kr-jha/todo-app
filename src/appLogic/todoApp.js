@@ -13,6 +13,20 @@ class Todo {
         }
         this.projects[newTask.project].tasks.push(newTask);
     }
+
+    viewInboxTasks() {
+        return this.projects[newTask.project].tasks;
+    }
+
+    addProject(newProject) {
+        if(this.projects.hasOwnProperty(newProject.projectTitle)) {
+            throw new Error("Project already present, please change the name.");
+        }
+
+        this.projects[newProject.projectTitle] = newProject;
+    }
+
+    
 }
 
 let todo_1 = new Todo();

@@ -43,14 +43,22 @@ class Task {
 }
 
 class Project {
-    constructor(projectTitle, projectDescription) {
-        this.projectTitle = projectTitle;
-        this.projectDescription = projectDescription;
+    constructor(title, description) {
+        this.title = title;
+        this.description = description;
         this.tasks = [];
     }
     
     addTask(newTask) {
         this.tasks.push(newTask);
+    }
+
+    changeTitle(newTitle) {
+        this.title = newTitle;
+    }
+
+    changeDescription(newDescription) {
+        this.description = newDescription;
     }
 
     deleteTask(taskIdx) {
@@ -64,7 +72,7 @@ class Project {
         return this.tasks;
     }
 
-    changeProject(taskIdx, newProject) {
+    changeProjectOfTask(taskIdx, newProject) {
         if(!this.tasks[taskIdx]) {
             throw new Error("No such task");
         }
