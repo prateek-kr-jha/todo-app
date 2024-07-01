@@ -6,6 +6,7 @@ class Task {
         this.dueDate = dueDate;
         this.project = project;
         this.subTasks = [];
+        this.completed = false;
     }
 
     changeTitle(newTitle) {
@@ -34,7 +35,11 @@ class Task {
 
     removeSubtask(indexOfSubTask) {
         this.subTasks.splice(indexOfSubTask, 1);
-    } 
+    }
+    
+    toggleCompletionState() {
+        this.completed = !this.completed;
+    }
 }
 
 class Project {
