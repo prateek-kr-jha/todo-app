@@ -25,8 +25,6 @@ class Todo {
 
         this.projects[newProject.projectTitle] = newProject;
     }
-
-    
 }
 
 let todo_1 = new Todo();
