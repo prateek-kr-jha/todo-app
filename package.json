@@ -19,5 +19,8 @@
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
   },
-  "type": "module"
+  "type": "commonjs",
+  "dependencies": {
+    "@material/web": "^1.5.1"
+  }
 }
