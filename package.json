@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",
-    "start": "webpack serve --open --config webpack.dev.js"
+    "start": "webpack serve --open --config webpack.dev.js",
+    "watch": "webpack --watch --config webpack.dev.js"
   },
   "author": "",
   "license": "MIT",
@@ -19,7 +20,6 @@
     "webpack-dev-server": "^5.0.4",
     "webpack-merge": "^5.10.0"
   },
-  "type": "commonjs",
   "dependencies": {
     "@material/web": "^1.5.1"
   }

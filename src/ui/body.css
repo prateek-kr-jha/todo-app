@@ -1,9 +1,16 @@
+@font-face {
+    font-family: "default_font";
+    src: url('./common/roboto/Roboto-Regular.ttf');
+}
+
 * {
-    border: 1px solid black;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
     overflow: hidden;
+    color: #E8EAED;
+    font-family: 'default_font';
+    
 }
 .container {
     height: 100vh;
@@ -12,18 +19,42 @@
     grid-template-columns: 1fr 5fr;
     grid-template-rows: 1fr 14fr;
 }
-.profile {
-    background-color: aquamarine;
-}
+/* .profile {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
 .nav {
     background-color: brown;
+    grid-column: 2/3;
+    grid-row: 1/2;
 }
 
 .projects {
     background-color: brown;
+    grid-column: 1/2;
+    grid-row: 2/3;
 }
 
 .content {
     background-color: bisque;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+/* 
+.user-detail-cntnr {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    width: 60%;
+    justify-content:flex-start;
 }
 
+.profile-image, .sidebar {
+    height: 60%;
+    margin: 0px 7px;
+}
+ */

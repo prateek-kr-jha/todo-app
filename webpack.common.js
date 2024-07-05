@@ -2,12 +2,12 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./src/script.js",
+    entry: "./src/ui/profile/profile.js",
     plugins:[
         new HtmlWebpackPlugin({
             title: "To Do List",
             filename: "index.html",
-            template: "./src/index.html",
+            template: "./src/ui/body.html",
             inject: "body",
         })
     ],
