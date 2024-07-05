@@ -5,9 +5,10 @@ function createDivWithClass(className) {
     return createdDiv;
 }
 
-function createImageWithSource(source) {
+function createImageWithSource(source, className) {
     const newImg = new Image();
     newImg.src = source;
+    newImg.classList.add(className);
 
     return newImg;
 }

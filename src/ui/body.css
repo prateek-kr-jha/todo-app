@@ -58,11 +58,35 @@
     justify-content: flex-start;
     align-items: center;
 }
-.basic-categories {
-    background-color: burlywood;
+/* .basic-categories {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
     height: 46.5%;
     width: 100%;
+    padding-left: 0.7em;
 }
+
+
+.search-cntnr, .inbox-cntnr, .today-cntnr {
+    padding-right: 5px;
+    height: 12%;
+    display: flex;
+    
+    align-items: center;
+}
+
+.search-text, .inbox-text, .today-text {
+    margin-left: 5px;
+    font-family: 'default_bold';
+} */
+
+.basic-categories img {
+    height: 90%;
+}
+
+
+
 .projects{
     background-color: chocolate;
     height: 46.5%;

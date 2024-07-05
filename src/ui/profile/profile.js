@@ -5,7 +5,7 @@ import side_bar from './img/sidebar.svg';
 import { createDivWithClass,createImageWithSource } from '../common/commonHelper';
 
 
-const container = document.querySelector('.container');
+// const container = document.querySelector('.container');
 
 function createProfileContent() {
     const profile = createDivWithClass('profile');
@@ -27,7 +27,7 @@ function createProfileContent() {
     return profile;
 }
 
-container.appendChild(createProfileContent());
+// container.appendChild(createProfileContent());
 
 export  {
     createProfileContent
