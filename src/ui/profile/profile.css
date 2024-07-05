@@ -17,7 +17,7 @@
     justify-content:flex-start;
 }
 
-.profile-image, .sidebar {
+.profile-image, .sidebar-icon {
     height: 60%;
     margin: 0px 7px;
 }

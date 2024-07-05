@@ -1,0 +1,21 @@
+.sidebar {
+    background-color: brown;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-btn {
+    border-radius: 50%;
+    background-color: #de4c4a;
+    height: 50%;
+    margin-left: 0.7em;
+}
+
+.add-tsk-txt {
+    color: #de4c4a;
+    font-family: 'default_black';
+    font-size: 1.3em;
+    margin-left: 7px;
+}

@@ -20,7 +20,7 @@ function createProfileContent() {
     profile.appendChild(userDetailContainer);
 
     const sideBar = createImageWithSource(side_bar);
-    sideBar.classList.add('sidebar');
+    sideBar.classList.add('sidebar-icon');
 
     profile.appendChild(sideBar);
 
