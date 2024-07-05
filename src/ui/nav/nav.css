@@ -1,0 +1,5 @@
+.nav {
+    background-color: #1e1e1e;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}

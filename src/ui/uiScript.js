@@ -1,8 +1,9 @@
-// const profileContainer = document.querySelector('.profile');
+import './body.css';
+import { createProfileContent } from './profile/profile.js';
+import { createNavElement } from './nav/nav.js';
 
-// function profileComponent() {
 
-// }
+const container = document.querySelector('.container');
 
-// profileContainer.appendChild(profileComponent());
-
+container.appendChild(createProfileContent());
+container.appendChild(createNavElement());

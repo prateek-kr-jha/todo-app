@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./src/ui/profile/profile.js",
+    entry: "./src/ui/uiScript.js",
     plugins:[
         new HtmlWebpackPlugin({
             title: "To Do List",
