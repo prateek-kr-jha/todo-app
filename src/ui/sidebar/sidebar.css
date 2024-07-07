@@ -6,6 +6,10 @@
     flex-direction: column;
 }
 
+.add-task-cntnr:hover {
+    background-color: #363636;
+}
+
 .add-btn {
     border-radius: 50%;
     background-color: #de4c4a;
@@ -25,7 +29,7 @@
     background-color: #1e1e1e;
     display: flex;
     flex-direction: column;
-    height: 46.5%;
+    height: 40.5%;
     width: 100%;
     padding-left: 0.4em;
 }
@@ -50,6 +54,8 @@
     height: 90%;
 }
 
-.search-cntnr:hover, .inbox-cntnr:hover, .today-cntnr:hover {
-    background-color: #363636;
+.projects{
+    background-color: chocolate;
+    height: 40.5%;
+    width: 100%;
 }

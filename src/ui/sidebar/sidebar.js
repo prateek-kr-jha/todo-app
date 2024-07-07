@@ -74,6 +74,21 @@ function sidebarEffectHandler() {
 
     sidebarDivs.forEach(div => {
         div.addEventListener("click", addEffectToSidebarDivs);
+        div.addEventListener('mouseover',(e) => {
+            const currentDiv = e.currentTarget;
+            const imgChild = e.currentTarget.firstChild;
+            if(![today_red_icon, search_red_icon, inbox_red_icon].includes(imgChild.src)) {
+                currentDiv.style.backgroundColor = "#363636";
+            }
+        })
+        div.addEventListener('mouseout', (e) => {
+            const currentDiv = e.currentTarget;
+            const imgChild = currentDiv.firstChild;
+
+            if(![today_red_icon, search_red_icon, inbox_red_icon].includes(imgChild.src)) {
+                currentDiv.style.backgroundColor = "#1e1e1e";
+            }
+        })
     })
 }
 
