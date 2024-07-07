@@ -4,6 +4,9 @@ import add_icon from './img/add.svg';
 import inbox_icon from './img/inbox.svg';
 import search_icon from './img/search.svg';
 import today_icon from './img/today.svg';
+import inbox_red_icon from './img/inboxRed.svg';
+import search_red_icon from './img/searchRed.svg';
+import today_red_icon from './img/todayRed.svg';
 
 function createAddTask() {
     const addTaskContainer = createDivWithClass("add-task-cntnr");
@@ -16,21 +19,6 @@ function createAddTask() {
 
     return addTaskContainer;
 }
-
-// <div class="basic-categories">
-// <div class="search-cntnr">
-//     <img src="./search.svg" alt="" class="search-icon">
-//     <div class="search-text">Search</div>
-// </div>
-// <div class="inbox-cntnr">
-//     <img src="./inbox.svg" class="inbox-icon">
-//     <div class="inbox-text">Inbox</div>
-// </div>
-// <div class="today-cntnr">
-//     <img src="./today.svg" alt="" class="today-icon">
-//     <div class="today-text">Today</div>
-// </div>
-// </div>
 
 function createBasicCategories() {
     const basicCategories = createDivWithClass('basic-categories');
@@ -81,7 +69,62 @@ function createSidebar() {
 
     return sideBar;
 }
+function sidebarEffectHandler() {
+    const sidebarDivs = document.querySelectorAll('.basic-categories > div');
 
+    sidebarDivs.forEach(div => {
+        div.addEventListener("click", addEffectToSidebarDivs);
+    })
+}
+
+
+function addEffectToSidebarDivs(e) {
+    const div1 = e.currentTarget;
+    const allSiblings = Array.from(div1.parentNode.children);
+    resetAllDivs(allSiblings);
+
+
+    let children = div1.children;
+    div1.style.backgroundColor = "#472525";
+
+    for(let i = 0; i < children.length; i++) {
+        console.log(children[i]);
+        switch(children[0].src) {
+            case search_icon:
+                children[0].src = search_red_icon;
+                break;
+            case today_icon:
+                children[0].src = today_red_icon;
+                break;
+            case inbox_icon:
+                children[0].src = inbox_red_icon;
+                break;
+        }
+        if(children[i].nodeName == 'DIV') {
+            children[i].style.color = "#de4c4a";
+        }
+    }
+}
+
+function resetAllDivs(allSiblings) {
+    allSiblings.forEach(sibling => {
+        sibling.style.backgroundColor = "#1e1e1e";
+        const child = sibling.children;
+        switch(child[0].src) {
+            case search_red_icon:
+                child[0].src = search_icon;
+                break;
+            case today_red_icon:
+                child[0].src = today_icon;
+                break;
+            case inbox_red_icon:
+                child[0].src = inbox_icon;
+                break;
+        }
+        child[1].style.color = "#e8eaed";
+    })
+}
 export {
-    createSidebar
+    createSidebar,
+    sidebarEffectHandler
 }

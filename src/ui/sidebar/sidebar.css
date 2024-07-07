@@ -27,15 +27,18 @@
     flex-direction: column;
     height: 46.5%;
     width: 100%;
-    padding-left: 0.7em;
+    padding-left: 0.4em;
 }
 
 .search-cntnr, .inbox-cntnr, .today-cntnr {
     padding-right: 5px;
     height: 12%;
+    width: 100%;
+    padding-left: 0.5em;
     display: flex;
-    /* justify-content: center; */
+    background-color: #1e1e1e;
     align-items: center;
+    border-radius: 3%;
 }
 
 .search-text, .inbox-text, .today-text {
@@ -45,4 +48,8 @@
 
 .basic-categories img {
     height: 90%;
+}
+
+.search-cntnr:hover, .inbox-cntnr:hover, .today-cntnr:hover {
+    background-color: #363636;
 }
