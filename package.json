@@ -22,5 +22,6 @@
   },
   "dependencies": {
     "@material/web": "^1.5.1"
-  }
+  },
+  "type": "module"
 }

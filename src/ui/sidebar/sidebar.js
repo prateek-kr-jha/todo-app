@@ -54,7 +54,9 @@ function createBasicCategories() {
 
 function createProjectDisplay() {
     const projectDisplay = createDivWithClass('projects');
-
+    const projectHeading = createDivWithClass('pppppproject-heading-cntnr');
+    projectHeading.innerText = "Projects";
+    projectDisplay.appendChild(projectHeading);
     return projectDisplay;
 }
 
@@ -86,7 +88,7 @@ function sidebarEffectHandler() {
             const imgChild = currentDiv.firstChild;
 
             if(![today_red_icon, search_red_icon, inbox_red_icon].includes(imgChild.src)) {
-                currentDiv.style.backgroundColor = "#1e1e1e";
+                currentDiv.style.backgroundColor = "#262626";
             }
         })
     })

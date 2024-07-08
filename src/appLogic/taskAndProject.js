@@ -64,14 +64,17 @@ class SubTask extends Task {
     }
 }
 
-let newSubtask = new SubTask("new sub task", "test for subtask", "", "", "title", "title");
-console.log(newSubtask);
+// let newSubtask = new SubTask("new sub task", "test for subtask", "", "", "title", "title");
+// console.log(newSubtask);
 
 class Project {
+    static projectCount = 1;
     constructor(title, description) {
         this.title = title;
         this.description = description;
         this.tasks = [];
+        this.hash = "p-" + Project.projectCount;
+        Project.projectCount++;
     }
     
     addTask(newTask) {

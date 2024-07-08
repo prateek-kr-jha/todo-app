@@ -45,19 +45,19 @@
 }
 
 .content {
-    background-color: bisque;
+    background-color: #1e1e1e;
     grid-column: 2/3;
     grid-row: 2/3;
 }
 
-.add-task-cntnr {
+/* .add-task-cntnr {
     background-color: #1e1e1e;
     height: 7%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-}
+} */
 /* .basic-categories {
     background-color: #1e1e1e;
     display: flex;
@@ -83,7 +83,7 @@
 
 
 
-
+/* 
 .add-btn {
     border-radius: 50%;
     background-color: #de4c4a;
@@ -96,4 +96,4 @@
     font-family: 'default_black';
     font-size: 1.3em;
     margin-left: 7px;
-}
+} */
