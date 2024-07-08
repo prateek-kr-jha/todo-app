@@ -20,7 +20,7 @@
     overflow: hidden;
     color: #E8EAED;
     font-family: 'default';
-    border: 1px solid white;
+    /* border: 1px solid white; */
 
     
 }
@@ -183,6 +183,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 0.4em;
 }
 
 .project-view-head-text {
@@ -192,10 +193,26 @@
 .add-project {
     font-size: 24px;
     height: 100%;
-    margin-right: 1rem;
+    /* margin-right: 0.4em; */
 }
 
 .projects-cntnr {
     height: 88%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.project {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.4em;
+}
+
+.project-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
