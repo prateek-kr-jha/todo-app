@@ -1,5 +1,7 @@
 import { Project } from "../appLogic/taskAndProject.js";
 import hash_icon from "../hash.svg";
+import './test.css';
+
 import { createDivWithClass, createImageWithSource } from './common/commonHelper.js';
 
 let newProject = new Project("project-1", "test");
@@ -29,9 +31,18 @@ const projectsContainer = document.querySelector(".projects-cntnr");
 
 const projectDiv = createDivWithClass("project");
 const projectName = createDivWithClass("project-name");
-hash_icon.fill = "#fffff";
-projectName.innerText = todoApp.projects.newProject.title;
-projectName.appendChild(hash_icon);
+// hash_icon.fill = "#fffff";
+// const hashImg = new Image();
+// console.log(hash_icon);
+// const hashImg = createImageWithSource(hash_icon);
+// console.log(hashImg.style, "----------------");
+// hashImg.style.fill = "#FFB200";
+// projectName.appendChild(hashImg);
+// hash_icon.fill = "#FFB200";
+projectName.innerHTML = hash_icon;
+const projectText = document.createElement("p");
+projectText.innerText = todoApp.projects.newProject.title;
+projectName.appendChild(projectText);
 const taskCount = createDivWithClass("task-count");
 taskCount.innerText = todoApp.projects.newProject.tasks.length;
 projectDiv.appendChild(projectName);
@@ -39,7 +50,12 @@ projectDiv.appendChild(taskCount);
 
 projectsContainer.appendChild(projectDiv);
 
-
+const svg = document.querySelector('svg');
+console.log(svg)
+svg.style.fill = "#FFB2ee";
+// console.log(svg.contentWindow, "-----------------------------------");
+// const paths = svg.contentDocument || svg.contentWindow;
+// paths.style.fill = "#FFB200";
 // export {
 //     todoApp
 // }

@@ -2,7 +2,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    entry: "./src/ui/uiScript.js",
+    entry: "./src/ui/test.js",
     plugins:[
         new HtmlWebpackPlugin({
             title: "To Do List",
@@ -23,12 +23,16 @@ module.exports = {
                 use: ['style-loader', 'css-loader']
             },
             {
-                test: /\.(png|jpeg|gif|jpg|svg)$/i,
+                test: /\.(png|jpeg|gif|jpg)$/i,
                 type: 'asset/resource',
             },
             {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource'
+            },
+            {
+                test: /\.(svg)$/i,
+                loader: 'svg-inline-loader'
             },
         ],
     }, 
