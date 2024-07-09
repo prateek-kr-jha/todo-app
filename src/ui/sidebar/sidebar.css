@@ -66,7 +66,25 @@
 }
 
 .projects{
-    /* background-color:#1e1e1e; */
+    background-color:#1e1e1e;
     height: 40.5%;
     width: 100%;
+    padding-left: 0.4em;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-heading-cntnr {
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 0.4em;
+}
+
+.project-heading-text {
+    font-family: 'default_bold';
+    /* color:rgb(255, 178, 0) */
 }

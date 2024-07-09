@@ -177,7 +177,7 @@
     flex-direction: column;
 }
 
-.project-view-header {
+.project-heading-cntnr {
     height: 12%;
     width: 100%;
     display: flex;
@@ -186,7 +186,7 @@
     padding-right: 0.4em;
 }
 
-.project-view-head-text {
+.project-heading-text {
     font-family: 'default_bold';
     /* color:rgb(255, 178, 0) */
 }
