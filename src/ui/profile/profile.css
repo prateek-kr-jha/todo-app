@@ -1,0 +1,23 @@
+.profile {
+    background-color: #262626;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.user-detail-cntnr {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-size: 1em;
+    font-weight: bold;
+    width: 60%;
+    justify-content:flex-start;
+}
+
+.profile-image, .sidebar-icon {
+    height: 60%;
+    margin: 0px 7px;
+}
