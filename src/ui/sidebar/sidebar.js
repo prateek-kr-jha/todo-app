@@ -125,7 +125,7 @@ function addEffectToSidebarDivs(e) {
 
 function resetAllDivs(allSiblings) {
     allSiblings.forEach(sibling => {
-        sibling.style.backgroundColor = "#1e1e1e";
+        sibling.style.backgroundColor = "#262626";
         const child = sibling.children;
         switch(child[0].src) {
             case search_red_icon:
