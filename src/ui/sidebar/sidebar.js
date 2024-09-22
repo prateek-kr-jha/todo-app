@@ -54,7 +54,7 @@ function createBasicCategories() {
 
 function createProjectDisplay() {
     const projectDisplay = createDivWithClass('projects');
-    const projectHeading = createDivWithClass('pppppproject-heading-cntnr');
+    const projectHeading = createDivWithClass('project-heading-cntnr');
     projectHeading.innerText = "Projects";
     projectDisplay.appendChild(projectHeading);
     return projectDisplay;
