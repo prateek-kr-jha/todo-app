@@ -1,53 +1,52 @@
 @font-face {
-    font-family: "default";
-    src: url('./common/roboto/Roboto-Regular.ttf');
+  font-family: "default";
+  src: url("./common/roboto/Roboto-Regular.ttf");
 }
 
 @font-face {
-    font-family: "default_bold";
-    src: url('./common/roboto/Roboto-Bold.ttf');
+  font-family: "default_bold";
+  src: url("./common/roboto/Roboto-Bold.ttf");
 }
 
 @font-face {
-    font-family: "default_black";
-    src: url('./common/roboto/Roboto-Black.ttf');
+  font-family: "default_black";
+  src: url("./common/roboto/Roboto-Black.ttf");
 }
 
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
-    color: #E8EAED;
-    font-family: 'default';
-    
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  color: #e8eaed;
+  font-family: "default";
 }
 .container {
-    height: 100vh;
-    width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 14fr;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 14fr;
 }
 
 .nav {
-    background-color: brown;
-    grid-column: 2/3;
-    grid-row: 1/2;
+  background-color: brown;
+  grid-column: 2/3;
+  grid-row: 1/2;
 }
 
 .sidebar {
-    background-color: brown;
-    grid-column: 1/2;
-    grid-row: 2/3;
-    display: flex;
-    flex-direction: column;
+  background-color: brown;
+  grid-column: 1/2;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
 }
 
 .content {
-    background-color: #1e1e1e;
-    grid-column: 2/3;
-    grid-row: 2/3;
+  background-color: #1e1e1e;
+  grid-column: 2/3;
+  grid-row: 2/3;
 }
 
 /* .add-task-cntnr {
@@ -80,8 +79,6 @@
     margin-left: 5px;
     font-family: 'default_bold';
 } */
-
-
 
 /* 
 .add-btn {

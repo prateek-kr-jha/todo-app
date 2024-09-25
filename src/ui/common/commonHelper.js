@@ -1,18 +1,15 @@
 function createDivWithClass(className) {
-    const createdDiv = document.createElement('div');
-    createdDiv.classList.add(className);
+  const createdDiv = document.createElement("div");
+  createdDiv.classList.add(className);
 
-    return createdDiv;
+  return createdDiv;
 }
 
 function createImageWithSource(source, className) {
-    const newImg = new Image();
-    newImg.src = source;
-    newImg.classList.add(className);
+  const newImg = new Image();
+  newImg.src = source;
+  newImg.classList.add(className);
 
-    return newImg;
+  return newImg;
 }
-export  {
-    createDivWithClass,
-    createImageWithSource
-}
+export { createDivWithClass, createImageWithSource };

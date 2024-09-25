@@ -1,20 +1,15 @@
-import '../body.css';
-import './nav.css';
-import { createDivWithClass } from '../common/commonHelper';
+import "../body.css";
+import "./nav.css";
+import { createDivWithClass } from "../common/commonHelper";
 
-const container = document.querySelector('.container');
+const container = document.querySelector(".container");
 
+function createNavElement() {
+  const nav = createDivWithClass("nav");
 
-function createNavElement(){
-    const nav = createDivWithClass('nav');
-
-
-    return nav;
+  return nav;
 }
-
 
 container.appendChild(createNavElement());
 
-export {
-    createNavElement
-}
+export { createNavElement };

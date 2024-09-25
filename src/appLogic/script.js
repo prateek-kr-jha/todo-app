@@ -13,11 +13,11 @@ console.log(new_Project);
 new_Project.addTodo(new_todo);
 // console.log(new_Project);
 let tod_obj = {
-    title: 'wash',
-    description: 'clothes',
-    dueDate: '04-05-2024',
-    priority: 5
-  }
+  title: "wash",
+  description: "clothes",
+  dueDate: "04-05-2024",
+  priority: 5,
+};
 
 new_Project.addTodo(tod_obj);
 new_Project.showTodo();
